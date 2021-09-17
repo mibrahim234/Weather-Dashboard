@@ -1,0 +1,41 @@
+:root {
+    --db: #001f3f;
+    --lb: #024e76;
+    --llb:  #39a6b2;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+nav {
+    font-size: 30px;
+    color: white;
+    background-color: var(--db);
+    text-align: center;
+    margin: 0px;
+    padding-top: 0px;
+     text-align: center;
+     position: relative;
+    overflow: hidden;
+}
+
+.strawberry {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#search {
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--llb);
+    max-width: 400px;
+    width: 100%;
+}
+
+#text-entry {
+    font-size: 30px;
+}

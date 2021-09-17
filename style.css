@@ -5,11 +5,9 @@
     --white: #ffffff;
 }
 
-body {
-    margin: 0;
-}
-
-
+* {
+    box-sizing: border-box;
+  }
 
 nav {
     font-size: 30px;
@@ -36,6 +34,6 @@ nav {
     width: 100%;
 }
 
-#text-entry {
+#city-entry {
     font-size: 30px;
 }

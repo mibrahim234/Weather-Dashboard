@@ -4,12 +4,15 @@ var weatherEl = document.querySelector("#weatherboxcontainer");
 var forecastEl = document.querySelector("#fivedayforecast");
 var cityName = "";
 var cityNameH1 = document.querySelector("#blueberry");
+var cityLat;
+var cityLon;
 
 function getCityInfo (event) {
 event.preventDefault();
 var userInput = cityInputEl.value;
 cityName = userInput.trim().toLowerCase();
-getCurrentWeather();
+getCurrentWeather()
+;
 }
 
 function getCurrentWeather () {
@@ -24,8 +27,27 @@ console.log(data);
  var h1 = document.createElement("h1");
  h1.textContent = data.city.name;
  weatherEl.appendChild(h1);
+ var h2 = document.createElement("h2");
+ h2.textContent = data.city.timezone;
+ weatherEl.appendChild(h2);
+ cityLat = data.city.coord.lat
+ cityLon = data.city.coord.lon
+ console.log(cityLat + ':' + cityLon)
+ getFiveDayForecast(cityLat, cityLon)
+ 
+
 }
+
+function getFiveDayForecast (lat, lon) {
+    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=ec104f2f80e34aa355099c98f2584fe7&units=imperial`)
+    .then(response => response.json())
+    .then(data => console.log(data));
+    ;
+}
+
+
   searchBtn.addEventListener("click", getCityInfo)
+
 
   
   

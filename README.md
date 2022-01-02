@@ -1,38 +1,32 @@
-# Weather Dashboard
+# Weather Dashboard ![GitHub license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
-## Description
-
-## How It Works
-Criteria:
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-
-
-![Weather Dashboard ScreenShot](assets/images/SSW.PNG)
-
-## Built With
-* HTML
-* CSS
-* Javascript
-* JQuery
-* BootStrap
-
-## Website
-Link to the GIT repository: <br>
-https://github.com/mibrahim234/Weather-Dashboard
-
-
-Link to the Live Page: <br>
+# Live Site 
 https://mibrahim234.github.io/Weather-Dashboard/
 
-## Contribution
+## Description
+This website is designed to function as an interactive weather dashboard. It allows the user to view a city's current weather and 5 day forecast. User can view the weather information simply by typing the city's name in the form. <br> 
+After form is submitted, the page will render the weather information for that specific city. Search history gets saved as buttons with the city's name on them underneath the search form.
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Credits](#credits)
+* [Questions](#questions)
+## Installation
+To install this application go to https://github.com/mibrahim234/Weather-Dashboard. Clone the repo by pressing the green button. User can clone using an SSH key or HTTPS key. User will also be able to download the zip file. 
+
+## Usage 
+ Website functions as a normal website. Once on the website simply type in the form or click on the buttons to get weather information.
+  
+## License
+Copyright (c) [2021]
+The license is MIT License. 
+Read more about it at https://opensource.org/licenses/MIT.
+
+## Credits
 Made with ❤️ by Mohammad Ibrahim
+
+## Questions
+If you have any additional questions please contact me at mohamm1417@gmail.com.
+GitHub: https://github.com/mibrahim234

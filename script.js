@@ -1,3 +1,12 @@
+let city;
+var apiKey = "ec104f2f80e34aa355099c98f2584fe7";
+var date = moment().format("(M/D/YY)")
+
+let citySaved =  JSON.parse(localStorage.getItem("cities"));
+
+// check if data is in local storage 
+
+
 var cityInputEl = document.querySelector("#city-entry");
 var searchBtn = document.querySelector("#search");
 var weatherEl = document.querySelector("#weatherboxcontainer");
@@ -34,8 +43,6 @@ console.log(data);
  cityLon = data.city.coord.lon
  console.log(cityLat + ':' + cityLon)
  getFiveDayForecast(cityLat, cityLon)
- 
-
 }
 
 function getFiveDayForecast (lat, lon) {

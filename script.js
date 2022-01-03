@@ -1,6 +1,15 @@
 let city;
 var apiKey = "ec104f2f80e34aa355099c98f2584fe7";
 var date = moment().format("(M/D/YY)")
+var weatherBtn = document.getElementById('weatherBtn');
+var clearBtn = document.getElementById('clearBtn');
+var city = document.getElementById('city');
+var cityName = document.getElementById('cityName');
+var temperature = document.getElementById('temperature');
+var humidity = document.getElementById('humidity');
+var windSpeed = document.getElementById('windSpeed');
+var uvIndex = document.getElementById('uvIndex');
+var savedCities = document.getElementById('savedCities');
 
 let citySaved =  JSON.parse(localStorage.getItem("cities"));
 
@@ -17,6 +26,12 @@ function loStore() {
         return citySaved;
     }
 }
+
+// check if data is in local storage, write previous search array
+loStore();
+// prevSearch();
+
+// Search Button Click
 
 var cityInputEl = document.querySelector("#city-entry");
 var searchBtn = document.querySelector("#search");

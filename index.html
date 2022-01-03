@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Weather DashBoard</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <nav>
-    <h1>Weather Dashboard</h1>
-    </nav>
-    <div>
-        <form>
+    <header>
+        <div>
+          <h1 class="mt-5">Weather Dashboard</h1>
+        </div>
+        <button class="add-button">Add to home screen</button>
+      </header>
+      <main>
+        <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-2 col-md-3 col-sm-9 mt-5 mr-3 ml-3">
+                      <form class=mb-3>
+                        <div class="form-group">
+           <label for="city">Search for a City:</label>
+     <div class="form-inline d-flex align-items-center">
+ <input type="text" class="form-control mr-1" id="city" aria-describedby="citySearch">
+ <button type="submit" class="btn btn-sm mr-2 mt-2" style="background-color: #024e76;" id="weatherBtn">
+</button>
+
+<button class="btn btn-sm mt-2" style="background-color: #024e76; color: white;" id="clearBtn">Clear List</button>
+</div>
+</div>
+</form>
+<div id="savedCities"></div>
+</div>
+
+<div class="col-sm-12 col-md-9 mt-5" id="forecasts">
+<div class="border border-info p-3" id="currentDay">
+
+    <h2 id="cityName"></h2>
+    <p>Temperature: <span id="temperature"></span></p>
+    <p>Humidity: <span id="humidity"></span></p>
+    <p>Wind Speed: <span id="windSpeed"></span></p>
+    <p>UV Index: <span id="uvIndex">###</span></p>
+</div>
+      <!-- <form>
     <h2 class="strawberry"> Search for a City:</h2>
     <input type="text" placeholder="New York City" id="city-entry" autofocus="true"> 
-    <!--Should i use break to put it on the next line?-->
+    Should i use break to put it on the next line?
     <br><br>
     <button id="search">Search</button> 
     </div>
     </form>
     <div id="weatherboxcontainer">
-       <!-- <h1 id="blueberry">City Name</h1> -->
+        <h1 id="blueberry">City Name</h1> 
     </div>
-    <div id="fivedayforecast"></div>
+    <div id="fivedayforecast"></div> -->
+    
     <script src="./script.js"></script>
 </body>
 </html>

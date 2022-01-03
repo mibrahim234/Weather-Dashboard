@@ -5,7 +5,18 @@ var date = moment().format("(M/D/YY)")
 let citySaved =  JSON.parse(localStorage.getItem("cities"));
 
 // check if data is in local storage 
-
+function loStore() {
+    if (JSON.parse(localStorage.getItem("cities")) == null) {
+        let citySavedLoc = [];
+        window.citySaved = citySavedLoc;
+        return citySaved;
+    }
+    else {
+        var citySavedLoc = JSON.parse(localStorage.getItem("cities"));
+        window.citySaved = citySavedLoc;
+        return citySaved;
+    }
+}
 
 var cityInputEl = document.querySelector("#city-entry");
 var searchBtn = document.querySelector("#search");
